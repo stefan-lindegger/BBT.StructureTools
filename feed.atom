@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>http://bbtsoftware.github.io/BBT.StructureTools</id>
+	<title>BBT.StructureTools</title>
+	<link rel="self" href="http://bbtsoftware.github.io/BBT.StructureTools" />
+	<rights>2019</rights>
+	<updated>2019-08-26T07:54:39Z</updated>
+</feed>
