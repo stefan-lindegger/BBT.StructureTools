@@ -20,6 +20,13 @@
         private Expression<Func<TTarget, TTargetValue>> targetexpression;
         private ICreateConvertHelper<TSourceValue, TTargetValue, TConcreteTargetValue, TConvertIntention> createConvertHelper;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCreateToOne{TSource, TTarget, TSourceValue, TTargetValue, TConcreteTargetValue, TConvertIntention}"/> class.
+        /// </summary>
+        public OperationCreateToOne()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Func<TSource, TSourceValue> sourceFunc,

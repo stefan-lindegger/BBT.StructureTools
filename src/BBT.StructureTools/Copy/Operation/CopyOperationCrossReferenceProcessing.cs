@@ -14,6 +14,13 @@
     {
         private Expression<Func<TReferencingModel, TCrossReferencedModel>> referencingProperyExpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyOperationCrossReferenceProcessing{T, TCrossReferencedModel, TReferencingModel}"/> class.
+        /// </summary>
+        public CopyOperationCrossReferenceProcessing()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Expression<Func<TReferencingModel, TCrossReferencedModel>> referencingProperty)

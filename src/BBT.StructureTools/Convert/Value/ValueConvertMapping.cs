@@ -10,6 +10,13 @@
         private readonly HashSet<TSource> mapToException = new HashSet<TSource>();
         private Func<TTarget> nullCaseFunc;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ValueConvertMapping{TSource, TTarget}"/> class.
+        /// </summary>
+        public ValueConvertMapping()
+        {
+        }
+
         /// <inheritdoc/>
         public void AddException(TSource sourceValue)
         {

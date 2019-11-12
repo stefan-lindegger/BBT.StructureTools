@@ -5,6 +5,13 @@
     {
         private readonly IValueConvertMapping<TSource, TTarget> valueConvertMapping = new ValueConvertMapping<TSource, TTarget>();
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConvertValueRegistration{TSource, TTarget}"/> class.
+        /// </summary>
+        public ConvertValueRegistration()
+        {
+        }
+
         /// <inheritdoc/>
         public IConvertValueRegistration<TSource, TTarget> Register(TSource sourceValue, TTarget targetValue)
         {

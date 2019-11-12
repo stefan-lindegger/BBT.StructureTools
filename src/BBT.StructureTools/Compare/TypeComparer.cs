@@ -12,6 +12,13 @@
     /// </summary>
     internal sealed class TypeComparer : IComparer<Type>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TypeComparer"/> class.
+        /// </summary>
+        public TypeComparer()
+        {
+        }
+
         /// <inheritdoc/>
         public int Compare(Type x, Type y)
         {

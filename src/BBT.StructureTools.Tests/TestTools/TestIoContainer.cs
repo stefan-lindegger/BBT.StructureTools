@@ -2,15 +2,6 @@
 {
     using System;
     using BBT.StrategyPattern;
-    using BBT.StructureTools.Compare;
-    using BBT.StructureTools.Compare.Helper;
-    using BBT.StructureTools.Convert;
-    using BBT.StructureTools.Convert.Strategy;
-    using BBT.StructureTools.Convert.Value;
-    using BBT.StructureTools.Copy;
-    using BBT.StructureTools.Copy.Helper;
-    using BBT.StructureTools.Copy.Operation;
-    using BBT.StructureTools.Copy.Strategy;
     using BBT.StructureTools.Initialization;
     using BBT.StructureTools.Tests.TestTools.IoC;
     using Ninject;
@@ -32,10 +23,7 @@
         /// </summary>
         public static IKernel Initialize()
         {
-            var settings = new NinjectSettings
-            {
-                InjectNonPublic = true,
-            };
+            var settings = new NinjectSettings();
 
             var kernel = new StandardKernel(settings);
 

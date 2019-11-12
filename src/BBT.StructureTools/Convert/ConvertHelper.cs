@@ -5,8 +5,15 @@
     using BBT.StructureTools.Extension;
 
     /// <inheritdoc/>
-    public class ConvertHelper : IConvertHelper
+    internal class ConvertHelper : IConvertHelper
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConvertHelper"/> class.
+        /// </summary>
+        public ConvertHelper()
+        {
+        }
+
         /// <inheritdoc/>
         public void DoConvertPreProcessing<TSourceClass, TTargetClass>(
             TSourceClass source,

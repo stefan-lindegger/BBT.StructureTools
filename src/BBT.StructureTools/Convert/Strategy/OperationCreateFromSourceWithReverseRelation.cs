@@ -18,6 +18,13 @@
         private ICreateConvertHelper<TSource, TTargetValue, TConcreteTargetValue, TTarget, TConvertIntention> createConvertHelper;
         private Expression<Func<TTarget, TTargetValue>> targetexpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCreateFromSourceWithReverseRelation{TSource, TTarget, TTargetValue, TConcreteTargetValue, TConvertIntention}"/> class.
+        /// </summary>
+        public OperationCreateFromSourceWithReverseRelation()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Expression<Func<TTarget, TTargetValue>> targetExpression,

@@ -17,6 +17,13 @@
 
         private ICreateCopyHelper<TChild, TConcreteChild, T> createCopyHelper;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyOperationCreateToOneWithReverseRelation{T, TChild, TConcreteChild}"/> class.
+        /// </summary>
+        public CopyOperationCreateToOneWithReverseRelation()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Func<T, TChild> sourceFunc,

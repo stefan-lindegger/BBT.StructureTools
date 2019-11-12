@@ -13,6 +13,13 @@
         where TTarget : class
         where TConcreteTarget : class, TTarget, new()
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyHelperFactory{TTarget, TConcreteTarget}"/> class.
+        /// </summary>
+        public CopyHelperFactory()
+        {
+        }
+
         /// <inheritdoc/>
         public ICreateCopyHelper<TTarget, TConcreteTarget, TReverseRelation> GetCopyHelper<TReverseRelation>(
             Expression<Func<TTarget, TReverseRelation>> reverseRelationFunc)

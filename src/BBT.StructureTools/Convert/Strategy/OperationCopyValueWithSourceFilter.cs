@@ -14,6 +14,13 @@
         private Func<TSource, TTarget, TValue> sourceFunc;
         private Expression<Func<TTarget, TValue>> targetexpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCopyValueWithSourceFilter{TSource, TTarget, TValue}"/> class.
+        /// </summary>
+        public OperationCopyValueWithSourceFilter()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Func<TSource, TTarget, TValue> sourceFunc,

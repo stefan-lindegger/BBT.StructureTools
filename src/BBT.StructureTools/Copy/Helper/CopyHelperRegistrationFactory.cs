@@ -6,6 +6,13 @@
     internal class CopyHelperRegistrationFactory : ICopyHelperRegistrationFactory
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="CopyHelperRegistrationFactory"/> class.
+        /// </summary>
+        public CopyHelperRegistrationFactory()
+        {
+        }
+
+        /// <summary>
         /// Creates an instance of CopyHelperRegistration.
         /// </summary>
         /// <typeparam name="T">Creation type.</typeparam>

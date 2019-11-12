@@ -8,7 +8,7 @@
     using BBT.StructureTools.Extension;
 
     /// <inheritdoc/>
-    public class EqualityComparerHelperRegistration<T> : IEqualityComparerHelperRegistration<T>
+    internal class EqualityComparerHelperRegistration<T> : IEqualityComparerHelperRegistration<T>
         where T : class
     {
         private readonly ICollection<IEqualityComparerHelperStrategy<T>> registeredStrategies;

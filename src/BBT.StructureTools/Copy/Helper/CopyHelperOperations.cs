@@ -13,7 +13,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="CopyHelperOperations{T}"/> class.
         /// </summary>
-        internal CopyHelperOperations(IEnumerable<ICopyOperation<T>> registeredStrategies)
+        public CopyHelperOperations(IEnumerable<ICopyOperation<T>> registeredStrategies)
         {
             registeredStrategies.NotNull(nameof(registeredStrategies));
 

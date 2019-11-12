@@ -13,6 +13,13 @@
     {
         private Expression<Func<TTarget, TSource>> targetexpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCopySource{TSource, TTarget}"/> class.
+        /// </summary>
+        public OperationCopySource()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(Expression<Func<TTarget, TSource>> targetExpression)
         {

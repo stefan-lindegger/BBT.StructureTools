@@ -15,7 +15,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="EqualityComparerHelperOperations{TModel}"/> class.
         /// </summary>
-        internal EqualityComparerHelperOperations(IEnumerable<IEqualityComparerHelperStrategy<TModel>> registeredStrategies)
+        public EqualityComparerHelperOperations(IEnumerable<IEqualityComparerHelperStrategy<TModel>> registeredStrategies)
         {
             registeredStrategies.NotNull(nameof(registeredStrategies));
 

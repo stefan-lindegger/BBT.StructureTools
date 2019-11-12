@@ -16,6 +16,13 @@
         private Func<TSource, TValue> sourceLookupFunc;
         private Expression<Func<TTarget, TValue>> targetexpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCopyValueWithLookUp{TSource, TTarget, TValue}"/> class.
+        /// </summary>
+        public OperationCopyValueWithLookUp()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Func<TSource, TValue> aSourceFunc,

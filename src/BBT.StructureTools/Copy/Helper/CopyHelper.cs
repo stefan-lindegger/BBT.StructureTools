@@ -9,6 +9,13 @@
     /// <inheritdoc/>
     internal class CopyHelper : ICopyHelper
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyHelper"/> class.
+        /// </summary>
+        public CopyHelper()
+        {
+        }
+
         /// <inheritdoc/>
         public void DoCopyPostProcessing<TClassToCopy>(
             TClassToCopy source,

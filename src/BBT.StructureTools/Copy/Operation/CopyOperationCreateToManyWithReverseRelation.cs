@@ -5,7 +5,6 @@
     using System.Linq;
     using System.Linq.Expressions;
     using BBT.MaybePattern;
-    using BBT.StructureTools.Convert.Strategy;
     using BBT.StructureTools.Copy;
     using BBT.StructureTools.Extension;
 
@@ -18,6 +17,13 @@
         private ICreateCopyHelper<TChild, TConcreteChild, TParent> createCopyHelper;
         private Func<TParent, IEnumerable<TChild>> sourceFunc;
         private Maybe<Expression<Func<TParent, ICollection<TChild>>>> maybeTargetExpression;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyOperationCreateToManyWithReverseRelation{TParent, TChild, TConcreteChild}"/> class.
+        /// </summary>
+        public CopyOperationCreateToManyWithReverseRelation()
+        {
+        }
 
         /// <inheritdoc/>
         public void Initialize(

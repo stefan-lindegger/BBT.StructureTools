@@ -17,6 +17,13 @@
 
         private TAttributeValueFactory attributeValueFactory;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CopyOperationCreateFromFactory{T, TValue, TAttributeValueFactory}"/> class.
+        /// </summary>
+        public CopyOperationCreateFromFactory()
+        {
+        }
+
         /// <inheritdoc/>
         public void Copy(T source, T target, ICopyCallContext copyCallContext)
         {

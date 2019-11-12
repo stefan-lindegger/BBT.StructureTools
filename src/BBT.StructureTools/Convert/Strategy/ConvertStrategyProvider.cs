@@ -8,6 +8,13 @@
     internal class ConvertStrategyProvider<TSource, TTarget, TIntention> : IConvertStrategyProvider<TSource, TTarget, TIntention>
         where TIntention : IBaseConvertIntention
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConvertStrategyProvider{TSource, TTarget, TIntention}"/> class.
+        /// </summary>
+        public ConvertStrategyProvider()
+        {
+        }
+
         /// <inheritdoc/>
         public ISourceConvertStrategy<TSource, TTarget, TIntention> GetConvertStrategyFromSource(TSource source)
         {

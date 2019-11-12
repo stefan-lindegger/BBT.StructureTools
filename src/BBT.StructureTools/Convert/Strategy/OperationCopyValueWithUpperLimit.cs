@@ -16,6 +16,13 @@
         private Func<TSource, TValue> sourceUpperLimitFunc;
         private Expression<Func<TTarget, TValue>> targetexpression;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OperationCopyValueWithUpperLimit{TSource, TTarget, TValue}"/> class.
+        /// </summary>
+        public OperationCopyValueWithUpperLimit()
+        {
+        }
+
         /// <inheritdoc/>
         public void Initialize(
             Func<TSource, TValue> aSourceFunc,
