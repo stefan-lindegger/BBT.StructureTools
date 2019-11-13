@@ -21,7 +21,7 @@
     /// <remarks>
     /// Keep this code testframework-agnostic!.
     /// </remarks>
-    public static class TestIoContainer
+    public static class TestIocContainer
     {
         /// <summary>
         /// Register types for copy, convert, and compare with

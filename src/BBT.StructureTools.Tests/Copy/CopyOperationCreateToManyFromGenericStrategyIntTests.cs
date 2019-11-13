@@ -21,7 +21,7 @@
 
         public CopyOperationCreateToManyFromGenericStrategyIntTests()
         {
-            var kernel = TestIoContainer.Initialize();
+            var kernel = TestIocContainer.Initialize();
 
             kernel.Bind<ICopyRegistrations<IParentTestClass>>().To<TestClassCopyRegistrations>();
             kernel.Bind<ICopyRegistrations<IChildTestClass>>().To<ChildTestClassCopyRegistrations>();
